@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Provider extends Model
+{
+    protected $table = 'Provider';
+
+    public function shoppings(){
+        return this->hasmany('App\Shopping');
+    }
+
+
+
+
+    use HasFactory;
+}
