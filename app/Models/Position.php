@@ -14,3 +14,4 @@ class Position extends Model
     }
     use HasFactory;
 }
+
